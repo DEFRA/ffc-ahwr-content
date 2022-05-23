@@ -5,6 +5,7 @@
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
   serviceName: 'Animal Health and Welfare Review Service',
+  serviceUrl: 'https://ffc-ahwr-frontend.ffc.snd.azure.defra.cloud',
 
   // Default port that prototype runs on
   port: '3000',

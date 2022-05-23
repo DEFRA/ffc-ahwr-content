@@ -79,6 +79,7 @@ app.locals.useCookieSessionStore = (useCookieSessionStore === 'true')
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+app.locals.serviceUrl = config.serviceUrl
 // extensionConfig sets up variables used to add the scripts and stylesheets to each page.
 app.locals.extensionConfig = extensions.getAppConfig()
 
