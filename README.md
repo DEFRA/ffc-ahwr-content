@@ -17,9 +17,14 @@ using a system Content Designers were familiar with. The performance of the
 site is not so important during private beta so using the default Heroku
 hosting is sufficient.
 
-# Linking to private beta service
+## Linking to private beta service
 
 There are several points within the content directing the user to the actual
 service. The URL for the service is contained in [app/config.js](app/config.js)
 with the name `serviceUrl`. This needs to be updated to match the URL for the
 service to be tested.
+
+The default value is [http://localhost:3000](http://localhost:3000). It can be
+overridden by setting an environment variable with the name `SERVICE_URL`. This
+is the best way to get the deployed application to point to the correct
+environment. Note that the URL should NOT end with a forward slash.

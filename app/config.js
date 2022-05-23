@@ -1,4 +1,4 @@
-const serviceUrl = process.env.SERVICE_URL || 'https://ffc-ahwr-frontend.ffc.snd.azure.defra.cloud'
+const serviceUrl = process.env.SERVICE_URL || 'http://localhost:3000' // use localhost for default
 const useAutoStoreData = process.env.USE_AUTO_STORE_DATA || 'true'
 const useCookieSessionStore = process.env.USE_COOKIE_SESSION_STORE || 'false'
 const useHttps = process.env.USE_HTTPS || 'true'
