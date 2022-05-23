@@ -49,16 +49,16 @@ if (useV6) {
 // Set up configuration variables
 var releaseVersion = packageJson.version
 var env = utils.getNodeEnv()
-var useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreData
-var useCookieSessionStore = process.env.USE_COOKIE_SESSION_STORE || config.useCookieSessionStore
-var useHttps = process.env.USE_HTTPS || config.useHttps
+var useAutoStoreData = config.useAutoStoreData
+var useCookieSessionStore = config.useCookieSessionStore
+var useHttps = config.useHttps
 
 useHttps = useHttps.toLowerCase()
 
 var useDocumentation = (config.useDocumentation === 'true')
 
 // Promo mode redirects the root to /docs - so our landing page is docs when published on heroku
-var promoMode = process.env.PROMO_MODE || 'false'
+var promoMode = config.usePromoMode
 promoMode = promoMode.toLowerCase()
 
 // Disable promo mode if docs aren't enabled
