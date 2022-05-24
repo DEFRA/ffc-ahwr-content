@@ -118,7 +118,7 @@
       <h2 id="review" class="govuk-heading-m">After the review</h2>
 
       <p class="govuk-body">After the review, you, or a member of your team, must record information about the review.</p>
-      <p class="govuk-body">You can <a href="start">record information about a review online</a></p>
+      <p class="govuk-body">You can <a href="{{ serviceUrl }}/vet">record information about a review online</a></p>
 
       <p class="govuk-body">Recording information takes around 5 minutes.</p>
       <p class="govuk-body">After you submit the information, the farmer can claim funding.</p>
@@ -127,12 +127,6 @@
         <li>endemic diseases and conditions testing</li>
         <li>your time</li>
       </ul>
-
-      {{ govukButton({
-        text: "Start now",
-        href: serviceUrl + "/vet",
-        isStartButton: true
-      }) }}
 
       <h2 id="record" class="govuk-heading-m">Information to record and share</h2>
 
