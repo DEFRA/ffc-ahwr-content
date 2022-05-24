@@ -28,3 +28,14 @@ The default value is [http://localhost:3000](http://localhost:3000). It can be
 overridden by setting an environment variable with the name `SERVICE_URL`. This
 is the best way to get the deployed application to point to the correct
 environment. Note that the URL should NOT end with a forward slash.
+
+## Deployment
+
+The deployment to Heroku would normally be done automatically via
+[GitHub integration](https://devcenter.heroku.com/articles/github-integration),
+however, at the time of writing (2022-05-24) this has been disabled due to a
+security [incident](https://status.heroku.com/incidents/2413).
+
+Whilst automatic deployments are not possible, manual deployment from the local
+machine is the easiest approach see
+[deploying with Git](https://devcenter.heroku.com/articles/git) for details.
