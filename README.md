@@ -17,6 +17,16 @@ using a system Content Designers were familiar with. The performance of the
 site is not so important during private beta so using the default Heroku
 hosting is sufficient.
 
+## Pre-requisites
+
+As this is a GOV.UK Prototype checkout the
+[requirements](https://govuk-prototype-kit.herokuapp.com/docs/install/requirements.md)
+to ensure you have everything setup to run it.
+
+## Running locally
+
+Run the application locally with `npm run start`.
+
 ## Linking to private beta service
 
 There are several points within the content directing the user to the actual
