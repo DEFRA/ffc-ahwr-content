@@ -6,6 +6,7 @@ const usePromoMode = process.env.PROMO_MODE || 'false'
 
 module.exports = {
   port: '3000',
+  googleTagManagerKey: 'GTM-5HKTPLK',
   serviceName: 'Animal Health and Welfare Review Service',
   serviceUrl,
 

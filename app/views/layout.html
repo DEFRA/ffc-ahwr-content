@@ -33,6 +33,7 @@
 
 {% block head %}
   {% include "includes/head.html" %}
+  {% include "tag-manager/head-content.html" %}
 {% endblock %}
 
 {% block pageTitle %}{{ serviceName }}{% endblock %}
@@ -71,6 +72,10 @@
   }) }}
   {% endblock %}
 {% endif %}
+
+{% block bodyStart %}
+  {% include "tag-manager/body-content.html" %}
+{% endblock %}
 
 {% block bodyEnd %}
   {% block scripts %}
