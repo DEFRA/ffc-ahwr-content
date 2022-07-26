@@ -74,6 +74,7 @@ if (isSecure) {
 
 // Add variables that are available in all views
 app.locals.asset_path = '/public/'
+app.locals.googleTagManagerKey = config.googleTagManagerKey
 app.locals.useAutoStoreData = (useAutoStoreData === 'true')
 app.locals.useCookieSessionStore = (useCookieSessionStore === 'true')
 app.locals.promoMode = promoMode
